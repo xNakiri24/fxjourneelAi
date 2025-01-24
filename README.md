@@ -1,0 +1,2 @@
+# fxjourneelAi
+Fx Journeel AI
