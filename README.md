@@ -1,8 +1,16 @@
-# React + Vite
+# FXjourneelAi - Under development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A webapp that a user can use as a journal for Stock, Forex, or Crypto Trading.
 
-Currently, two official plugins are available:
+Plan features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A journal type editor where user can reflect about there trades
+- A monitoring section where user can Add information about there trades and a simple calculation about there expected P&L for the trades.
+- AI feature where user can use to ask or upload a photo of a simple trading chart for basic analysis using ai. (ChatGPT AI - plan to be use)
+
+Task:
+- Repository migration - Done
+- Input testing - Pending
+
+
+
