@@ -12,8 +12,8 @@ function App() {
 
   return (
     <>
-      {/* <Authentication /> */}
-      <Dashboard />
+      <Authentication />
+      {/* <Dashboard /> */}
     </>
   );
 }

@@ -1,5 +1,6 @@
 .active {
   flex: 3;
+  border: 1px solid white;
   border-radius: 12px;
   margin: 0px 12px 0px 12px;
   overflow: scroll;

@@ -1,7 +1,8 @@
 import '../css/login.css';
 import { createUserWithEmailAndPassword, sendPasswordResetEmail, updateProfile } from 'firebase/auth';
-import {auth} from '../firebase/firebase';
+import {auth, firestoreDb} from '../firebase/firebase';
 import { useState } from 'react';
+import { setDoc } from 'firebase/firestore';
 
 
 function Login(){
@@ -12,7 +13,7 @@ function Login(){
  
 
     //this block runs when submit is click in form tag
-    const handleRegister = (e) => {
+    const handleRegister = async(e) => {
         console.log("hello")
         e.preventDefault();
         //target value in form tag
@@ -25,7 +26,15 @@ function Login(){
         //user creation block
         try{
             //user email password signup
-            const userCreate = createUserWithEmailAndPassword(auth, creatorID, secretPass);      
+            await createUserWithEmailAndPassword(auth, creatorID, secretPass)   
+            .then((userCredential)=>{
+                const user_id = userCredential.user.uid;
+
+                console.log(user_id)
+            })
+
+            await setDoc(doc(firestoreDb, "userDetails"))
+            
         }
         //error catcher
         catch (err){
@@ -46,10 +55,10 @@ return(
                 required />
                 <label for="secret-phrase" className='secret-label'>Secret Phrase: </label>
                 <input type="password" name="secret-phrase" className="secret-class" id="secret-phrase" placeholder="Phrase" required />
-                <button type="submit">Register</button>
+                <button type="submit">Login</button>
             </form>
 
-            <p className='tryPass'>try{render}</p>
+    
         </div>
     </>
 );

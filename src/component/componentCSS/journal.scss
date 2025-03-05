@@ -1,15 +1,24 @@
-.personal-journal{
+.journal-entry{
     flex: 1;
     // border: 1px solid white;
     border-radius: 3px;
+
+    .form1, .form2{
+        text-align: center;
+
+        .formTitle{
+            font-size: 14px;
+            padding-bottom: 8px;
+            font-weight: bold;
+        }
+    }
     
-    form{
-    
+    .form1{
         display: flex;
         flex-direction: column;
         
         
-       .form-div-1{
+       .form1-div-1{
         display: flex;
         flex-direction: row;
         margin: 12px 0px 12px 0px;
@@ -53,7 +62,106 @@
         
        }
        
+       button{
+        margin: 0 auto;
+        width: fit-content;
+        font-size: 12px;
+       }
 
         
+    }
+
+    @keyframes changeColor {
+        0% { background-color: red; }
+        14% { background-color: orange; }
+        28% { background-color: yellow; }
+        42% { background-color: green; }
+        57% { background-color: blue; }
+        71% { background-color: indigo; }
+        85% { background-color: violet; }
+        100% { background-color: red; }
+    }
+
+    
+    hr {
+        border: none;
+        height: 2px;
+        background: red;
+        animation: changeColor 5s linear infinite; 
+    }
+   
+    .form2{
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+
+        input{
+            border: 0;
+            background-color: black;
+            
+        }
+
+        textarea{
+            background-color: black;
+            color: white;
+            border: 1px solid grey;
+            margin: 0px 0px 12px 0px;
+            resize: none;
+        }
+
+        .toggle-button{
+            border: 1px solid white;
+            display: flex;
+
+            .long, .short{
+                flex: 1;
+                font-size: 12px;
+            }
+
+            
+        }
+
+        .trade-details{
+            display: flex;
+            flex-direction: column;
+            .entry-lot{
+                display: flex;
+                input{
+                    width: 125px;
+                }
+                input[type="number"]::-webkit-outer-spin-button,
+                input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none; /* Safari and Chrome */
+                margin: 0;
+            }
+            }
+            .stop-take{
+                display: flex;
+                input{
+                    width: 125px;
+                }
+                input[type="number"]::-webkit-outer-spin-button,
+                input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none; /* Safari and Chrome */
+                margin: 0;
+}
+            }
+        }
+        .pnl{
+            display: flex;
+            .risk, .reward{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                span{
+                    margin: 0;
+                }
+            }
+
+        }
+
+        button{
+            font-size: 12px;
+        }
     }
 }

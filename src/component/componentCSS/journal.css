@@ -1,42 +1,152 @@
-.personal-journal {
+.journal-entry {
   flex: 1;
   border-radius: 3px;
 }
-.personal-journal form {
+.journal-entry .form1, .journal-entry .form2 {
+  text-align: center;
+}
+.journal-entry .form1 .formTitle, .journal-entry .form2 .formTitle {
+  font-size: 14px;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+.journal-entry .form1 {
   display: flex;
   flex-direction: column;
 }
-.personal-journal form .form-div-1 {
+.journal-entry .form1 .form1-div-1 {
   display: flex;
   flex-direction: row;
   margin: 12px 0px 12px 0px;
 }
-.personal-journal form .form-div-1 .my-date {
+.journal-entry .form1 .form1-div-1 .my-date {
   background-color: black;
   color: white;
   border: 0px;
 }
-.personal-journal form .form-div-1 .my-mood {
+.journal-entry .form1 .form1-div-1 .my-mood {
   background-color: black;
   color: white;
   border: 0px;
 }
-.personal-journal form .title-class {
+.journal-entry .form1 .title-class {
   background-color: black;
   color: white;
   border: 0px;
   border-bottom: 1px solid grey;
   margin: 0px 0px 12px 0px;
 }
-.personal-journal form textarea {
+.journal-entry .form1 textarea {
   background-color: black;
   color: white;
   border: 1px solid grey;
   margin: 0px 0px 12px 0px;
   resize: none;
 }
-.personal-journal form .my-file {
+.journal-entry .form1 .my-file {
   background-color: black;
   color: white;
   margin: 0px 0px 12px 0px;
+}
+.journal-entry .form1 button {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+}
+@keyframes changeColor {
+  0% {
+    background-color: red;
+  }
+  14% {
+    background-color: orange;
+  }
+  28% {
+    background-color: yellow;
+  }
+  42% {
+    background-color: green;
+  }
+  57% {
+    background-color: blue;
+  }
+  71% {
+    background-color: indigo;
+  }
+  85% {
+    background-color: violet;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.journal-entry hr {
+  border: none;
+  height: 2px;
+  background: red;
+  animation: changeColor 5s linear infinite;
+}
+.journal-entry .form2 {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.journal-entry .form2 input {
+  border: 0;
+  background-color: black;
+}
+.journal-entry .form2 textarea {
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+  margin: 0px 0px 12px 0px;
+  resize: none;
+}
+.journal-entry .form2 .toggle-button {
+  border: 1px solid white;
+  display: flex;
+}
+.journal-entry .form2 .toggle-button .long, .journal-entry .form2 .toggle-button .short {
+  flex: 1;
+  font-size: 12px;
+}
+.journal-entry .form2 .trade-details {
+  display: flex;
+  flex-direction: column;
+}
+.journal-entry .form2 .trade-details .entry-lot {
+  display: flex;
+}
+.journal-entry .form2 .trade-details .entry-lot input {
+  width: 125px;
+}
+.journal-entry .form2 .trade-details .entry-lot input[type=number]::-webkit-outer-spin-button,
+.journal-entry .form2 .trade-details .entry-lot input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Safari and Chrome */
+  margin: 0;
+}
+.journal-entry .form2 .trade-details .stop-take {
+  display: flex;
+}
+.journal-entry .form2 .trade-details .stop-take input {
+  width: 125px;
+}
+.journal-entry .form2 .trade-details .stop-take input[type=number]::-webkit-outer-spin-button,
+.journal-entry .form2 .trade-details .stop-take input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Safari and Chrome */
+  margin: 0;
+}
+.journal-entry .form2 .pnl {
+  display: flex;
+}
+.journal-entry .form2 .pnl .risk, .journal-entry .form2 .pnl .reward {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.journal-entry .form2 .pnl .risk span, .journal-entry .form2 .pnl .reward span {
+  margin: 0;
+}
+.journal-entry .form2 button {
+  font-size: 12px;
 }/*# sourceMappingURL=journal.css.map */
