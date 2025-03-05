@@ -1,0 +1,16 @@
+.entryList {
+  padding: 8px;
+}
+.entryList .entryContainer {
+  margin: 8px 0px 8px 0px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid white;
+  height: -moz-max-content;
+  height: max-content;
+}
+.entryList .entryContainer .entry-date-mood {
+  display: flex;
+  border: 1px solid white;
+  justify-content: space-between;
+}/*# sourceMappingURL=journalList.css.map */

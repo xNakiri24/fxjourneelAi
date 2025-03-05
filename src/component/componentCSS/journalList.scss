@@ -1,0 +1,19 @@
+.entryList{
+    padding: 8px;
+    
+
+    .entryContainer{
+        margin: 8px 0px 8px 0px;
+        padding: 8px;
+        border-radius: 12px;
+        border: 1px solid white;
+        height: max-content;
+        
+    
+        .entry-date-mood{
+            display: flex;
+            border: 1px solid white;
+            justify-content: space-between
+        }
+    }
+}

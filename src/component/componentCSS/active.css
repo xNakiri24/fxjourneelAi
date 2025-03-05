@@ -1,0 +1,10 @@
+.active {
+  flex: 3;
+  border-radius: 12px;
+  margin: 0px 12px 0px 12px;
+  overflow: scroll;
+}
+
+.active::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=active.css.map */

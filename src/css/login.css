@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+.login-form {
+  flex: 1;
+  align-content: center;
+}
+.login-form form {
+  font-family: Russo One;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-form form .creator-label {
+  margin: 4px 0px 8px 0px;
+  color: white;
+  font-size: 36px;
+}
+.login-form form .creator-class {
+  margin: 4px 0px 8px 0px;
+  height: 44px;
+  width: 280px;
+  border-radius: 12px;
+}
+.login-form form .secret-label {
+  margin: 4px 0px 8px 0px;
+  color: white;
+  font-size: 36px;
+}
+.login-form form .secret-class {
+  margin: 4px 0px 8px 0px;
+  height: 44px;
+  width: 280px;
+  border-radius: 12px;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+.disclaimer {
+  font-family: Russo One;
+  flex: 1;
+}
+.disclaimer .heading-disclaimer {
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+.disclaimer .paragraph-disclaimer {
+  text-align: justify;
+  font-size: 28px;
+  color: white;
+}/*# sourceMappingURL=disclaimer.css.map */
